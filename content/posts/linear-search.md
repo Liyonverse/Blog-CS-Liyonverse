@@ -7,7 +7,6 @@ tags: [Algorithms, Computer Science]
 
 # Linear search
 
-<img src="/blog/static/images/Algorithm01.jpg" alt="Algo" width="600">
 
 > **Difficulty:** Intermediate 
 
