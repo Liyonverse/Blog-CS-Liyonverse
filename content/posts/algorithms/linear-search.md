@@ -3,7 +3,7 @@ title: "Algorithms"
 date: 2026-07-28
 author: Liyonverse
 tags: [Algorithms, Computer Science]
-cover : "algo.jpg"
+cover: "algo.jpg"
 ---
 
 # Linear search
