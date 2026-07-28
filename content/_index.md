@@ -1,6 +1,5 @@
 ---
 title: "Liyonverse"
-cover : "Linear.jpg"
 ---
 
 # Welcome to Liyonverse ✨
