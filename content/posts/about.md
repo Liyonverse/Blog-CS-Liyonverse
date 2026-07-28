@@ -6,6 +6,8 @@ title: "About"
 
 Hi, I'm **Liyon**.
 
+<!--more-->
+
 I am an aspiring **Software Engineer** passionate about technology, problem-solving, and creating meaningful software solutions.
 
 

@@ -1,20 +1,25 @@
 ---
 title: "Algorithms"
-date: 2026-07-27
+date: 2026-07-28
 author: Liyonverse
 tags: [Algorithms, Computer Science]
+cover : "algo.jpg"
 ---
 
 # Linear search
 
+---
+
+# What is this algorithm?
+
+<!--more-->
 
 > **Difficulty:** Intermediate 
 
 > **Estimated Reading Time:** 10 minutes
 
----
 
-# What is this algorithm?
+
 
 Linear search is one of the simplest algorithms in computer science. It works by looking at each element in a list, one by one, to find a target value.
 
@@ -190,8 +195,8 @@ Result: Prints "found at index 2" and stops completely
 
 | Case | Complexity |
 |------|------------|
-| Best | | O(1)
-| Worst | | O(n)
+| Best |  O(1)      |
+| Worst |  O(n)     |
 
 ---
 

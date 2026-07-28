@@ -30,4 +30,3 @@ pagination.pagerSize = 5
       name = "About"
       url = "/about/"
       weight = 1
-
