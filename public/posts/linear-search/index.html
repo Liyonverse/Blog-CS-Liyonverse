@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/Blog-CS-Liyonverse/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Blog-CS-Liyonverse/livereload" data-no-instant defer></script>
+  
+    <title>Algorithms :: Liyonverse Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Linear search Difficulty: Intermediate
+Estimated Reading Time: 10 minutes
+What is this algorithm? Linear search is one of the simplest algorithms in computer science. It works by looking at each element in a list, one by one, to find a target value.
+How it works:
+It checks the first element in the list.
+If it finds the target value, it stops and returns that element (or its index position).
+If it doesn&rsquo;t match, it moves to the next element and checks again.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1313/Blog-CS-Liyonverse/posts/linear-search/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/code.min.c4581949edab7810737609fc5568852bcd908945f14561e366dcd2300a370545.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/syntax.min.a2cc694a9b481f15d41722bffc2cc54eea4c4f74fd9072b0b33253604c22606e.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/terminal%20%283%29.min.4e2a9b22a27fbf46eed87d43cc2848ad79ff7eace74ad5b2fccf711a34ff689f.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/Blog-CS-Liyonverse/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/Blog-CS-Liyonverse/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/Blog-CS-Liyonverse/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Algorithms">
+<meta property="og:description" content="Linear search Difficulty: Intermediate
+Estimated Reading Time: 10 minutes
+What is this algorithm? Linear search is one of the simplest algorithms in computer science. It works by looking at each element in a list, one by one, to find a target value.
+How it works:
+It checks the first element in the list.
+If it finds the target value, it stops and returns that element (or its index position).
+If it doesn&rsquo;t match, it moves to the next element and checks again.
+" />
+<meta property="og:url" content="http://localhost:1313/Blog-CS-Liyonverse/posts/linear-search/" />
+<meta property="og:site_name" content="Liyonverse Blog" />
+
+  <meta property="og:image" content="http://localhost:1313/Blog-CS-Liyonverse/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-07-27 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="http://localhost:1313/Blog-CS-Liyonverse/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/Blog-CS-Liyonverse/posts/linear-search/">Algorithms</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-07-27</time><span class="post-author">Liyonverse</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/Blog-CS-Liyonverse/tags/algorithms/">Algorithms</a>&nbsp;
+      
+      #<a href="http://localhost:1313/Blog-CS-Liyonverse/tags/computer-science/">Computer Science</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="linear-search">Linear search<a href="#linear-search" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<img src="/blog/static/images/Algorithm01.jpg" alt="Algo" width="600">
+<blockquote>
+<p><strong>Difficulty:</strong> Intermediate</p>
+</blockquote>
+<blockquote>
+<p><strong>Estimated Reading Time:</strong> 10 minutes</p>
+</blockquote>
+<hr>
+<h1 id="what-is-this-algorithm">What is this algorithm?<a href="#what-is-this-algorithm" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Linear search is one of the simplest algorithms in computer science. It works by looking at each element in a list, one by one, to find a target value.</p>
+<p>How it works:</p>
+<ul>
+<li>
+<p>It checks the first element in the list.</p>
+</li>
+<li>
+<p>If it finds the target value, it stops and returns that element (or its index position).</p>
+</li>
+<li>
+<p>If it doesn&rsquo;t match, it moves to the next element and checks again.</p>
+</li>
+<li>
+<p>It keeps doing this until it finds the target or reaches the end of the list.</p>
+</li>
+</ul>
+<p>You can run a linear search from left to right or from right to left—it checks items in a straight line either way</p>
+<hr>
+<h1 id="simple-example-to-understand-this">Simple Example to understand this<a href="#simple-example-to-understand-this" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Real-Life Example: Finding Your Locker</p>
+<p>Imagine you are standing in front of a row of 7 lockers, and each locker has a name tagged on it. You are trying to find the locker with your name on it.</p>
+<p>Here is how you would do it:</p>
+<ul>
+<li>
+<p>Start at the beginning: Go to the very first locker.</p>
+</li>
+<li>
+<p>Check the name: Look at the tag.</p>
+</li>
+<li>
+<p>If it has your name, congratulations! You found it, and your search is finished.</p>
+</li>
+<li>
+<p>If it has someone else&rsquo;s name, move to the next locker.</p>
+</li>
+<li>
+<p>Repeat: Keep checking the lockers one by one (Locker 2, Locker 3, and so on).</p>
+</li>
+<li>
+<p>Finish: You stop as soon as you find your name, or after you check all 7 lockers.</p>
+</li>
+</ul>
+<p>That is exactly how Linear Search works! It checks items one by one in a straight line until it finds what it&rsquo;s looking for.</p>
+<hr>
+<h1 id="why-do-we-need-it">Why do we need it?<a href="#why-do-we-need-it" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>You might wonder why we need linear search if there are faster algorithms available. Here is why it is so useful:</p>
+<ul>
+<li>
+<p>Works on unsorted data: Linear search doesn&rsquo;t require your data to be in order. If your list is mixed up, linear search still works!</p>
+</li>
+<li>
+<p>Great for small datasets: If you only have a few items (like 10 or 20), linear search is fast enough and requires zero preparation.</p>
+</li>
+<li>
+<p>Super easy for beginners: It is the simplest search concept to code and understand.</p>
+</li>
+<li>
+<p>The foundation for harder algorithms: Learning linear search first makes it much easier to understand more advanced algorithms, like Binary Search.</p>
+</li>
+</ul>
+<p>Pro Tip for Beginners: Before jumping straight into Binary Search, I highly suggest coding a Linear Search first. It helps build your problem-solving confidence!</p>
+<hr>
+<h1 id="real-world-applications">Real-World Applications<a href="#real-world-applications" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Where is this algorithm used?</p>
+<p>📱 Contact List</p>
+<p>Searching a name in a small contact list.</p>
+<p>🎵 Music Playlist</p>
+<p>Finding a specific song in your playlist.</p>
+<p>📚 Library</p>
+<p>Searching for a book in a small collection.</p>
+<p>🛒 Shopping List</p>
+<p>Checking whether an item exists.</p>
+<p>🎓 Student Attendance</p>
+<p>Finding whether a student&rsquo;s name is present.</p>
+<p>🎮 Games</p>
+<p>Searching for a player or item in a small inventory.</p>
+<p>📝 To-Do Apps</p>
+<p>Finding a specific task.</p>
+<hr>
+<h1 id="prerequisites">Prerequisites<a href="#prerequisites" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Before learning this algorithm, you should know:</p>
+<ul>
+<li>Variables</li>
+<li>Lists/Arrays</li>
+<li>Loops (for or while)</li>
+<li>If statements</li>
+<li>Comparison operators (==, &lt;, &gt;)</li>
+</ul>
+<p>Now that you understand how these things works, the best way to solidify your learning is to write the algorithm yourself!</p>
+<hr>
+<h1 id="example">Example<a href="#example" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Input</p>
+<pre tabindex="0"><code>array [ 20 , 34 , 12 , 50 ]
+I need number &#34;12&#34;
+</code></pre><p>Process</p>
+<ul>
+<li>Go to fist number</li>
+<li>if the number is &ldquo;12&rdquo;. finish search and say &ldquo;Victory!&rdquo; .else,</li>
+<li>go to next number.</li>
+<li>if the number is &ldquo;12&rdquo;. finish search and say &ldquo;Victory!&rdquo; .</li>
+<li>else do 3rd Line</li>
+</ul>
+<p>Output</p>
+<pre tabindex="0"><code>number &#34;12&#34; and Victory!
+</code></pre><hr>
+<h1 id="python-implementation">Python Implementation<a href="#python-implementation" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># mylist = [ 24 , 12 , 30 , 45 , 3 ]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mytarget <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (count<span style="color:#f92672">&lt;</span>len(mylist)):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> mylist[count] <span style="color:#f92672">==</span> mytarget:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;found at index&#34;</span>,count)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> 
+</span></span></code></pre></div><h1 id="whats-hapenning-">What&rsquo;s hapenning ?<a href="#whats-hapenning-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<ul>
+<li>
+<p>mylist and mytarget: We have a list of numbers, and we are looking for the number 30.</p>
+</li>
+<li>
+<p>count = 0: We start at index position 0 (the very first item, which is 24).</p>
+</li>
+<li>
+<p>while (count &lt; len(mylist)): This tells Python, &ldquo;Keep looping through the list until you reach the end.&rdquo;</p>
+</li>
+<li>
+<p>if mylist[count] == mytarget: Python checks, &ldquo;Is the current item equal to 30?&rdquo;</p>
+</li>
+<li>
+<p>If YES: It prints where it found it and runs break to instantly stop searching.</p>
+</li>
+<li>
+<p>If NO: It goes to else, adds 1 to count (count += 1), and checks the next item in the next loop.</p>
+</li>
+</ul>
+<p>What happens inside each loop?</p>
+<ul>
+<li>
+<p>Loop 1 (count = 0): Checks 24. Is 24 == 30? No! Moves to next (count = 1).</p>
+</li>
+<li>
+<p>Loop 2 (count = 1): Checks 12. Is 12 == 30? No! Moves to next (count = 2).</p>
+</li>
+<li>
+<p>Loop 3 (count = 2): Checks 30. Is 30 == 30? Yes!</p>
+</li>
+</ul>
+<p>Result: Prints &ldquo;found at index 2&rdquo; and stops completely</p>
+<h1 id="time-complexity">Time Complexity<a href="#time-complexity" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<table>
+	<thead>
+			<tr>
+					<th>Case</th>
+					<th>Complexity</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Best</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Worst</td>
+					<td></td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h1 id="advantages">Advantages<a href="#advantages" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<ul>
+<li>
+<p>✔Easy to understand: It is simple, logical, and great for beginners who are just starting to learn programming.</p>
+</li>
+<li>
+<p>✔Works on any dataset: It doesn&rsquo;t matter if your list is sorted or unsorted—linear search will still find your target item.</p>
+</li>
+<li>
+<p>✔Perfect for small lists: For short lists with just a few items, linear search is fast, simple, and gets the job done without extra setup.</p>
+</li>
+<li>
+<p>✔No extra memory needed: It searches the list directly in place, so it doesn&rsquo;t waste computer memory.</p>
+</li>
+</ul>
+<hr>
+<h1 id="disadvantages">Disadvantages<a href="#disadvantages" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<ul>
+<li>
+<p>✘Gets slow on large datasets: As the size of your list grows, the time it takes to search increases. If you have 1,000,000 items, it might have to check all         1,000,000 items in the worst case!</p>
+</li>
+<li>
+<p>✘Less efficient than other algorithms: Compared to faster algorithms like Binary Search, linear search is much slower on big lists.</p>
+</li>
+</ul>
+<hr>
+<h1 id="summary">Summary<a href="#summary" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>What it is: Linear search is a simple algorithm that checks items in a list one by one until it finds the target.</p>
+<p>When to use it: It is best for small lists or unsorted data.</p>
+<p>Pros: Super easy to understand and code.</p>
+<p>Cons: Gets very slow as your list gets larger.</p>
+<h2 id="next-step-once-you-feel-comfortable-writing-linear-search-you-are-ready-to-learn-binary-search">Next Step: Once you feel comfortable writing Linear Search, you are ready to learn Binary Search!<a href="#next-step-once-you-feel-comfortable-writing-linear-search-you-are-ready-to-learn-binary-search" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h1 id="references">References<a href="#references" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<ul>
+<li>Harward university</li>
+<li>Open AI</li>
+</ul>
+<hr>
+<p>⭐ Thanks for reading!</p>
+<p>If you found this helpful, feel free to star the repository and follow my learning journey&hellip;</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="http://localhost:1313/Blog-CS-Liyonverse/posts/about/" class="button inline next">
+         [<span class="button__text">About</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/Blog-CS-Liyonverse/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

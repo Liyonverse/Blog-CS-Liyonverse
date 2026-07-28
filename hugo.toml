@@ -1,9 +1,8 @@
 baseURL = 'https://Liyonverse.github.io/Blog-CS-Liyonverse/'
-locale = 'en-us'
+languageCode = 'en-us'
 title = 'Liyonverse Blog'
+theme = 'terminal'
 
-languageCode = "en-us"
-theme = "terminal"
 pagination.pagerSize = 5
 
 [markup.goldmark.renderer]
@@ -18,19 +17,10 @@ pagination.pagerSize = 5
 [languages]
   [languages.en]
     copyright = ""
+
     [languages.en.params]
       subtitle = "Welcome guys"
       keywords = ""
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
-     
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"

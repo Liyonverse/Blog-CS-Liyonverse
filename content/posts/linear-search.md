@@ -1,5 +1,5 @@
 ---
-title: "Linear search"
+title: "Algorithms"
 date: 2026-07-27
 author: Liyonverse
 tags: [Algorithms, Computer Science]
@@ -7,7 +7,7 @@ tags: [Algorithms, Computer Science]
 
 # Linear search
 
-![Algo](images/Algo.jpg)
+<img src="/blog/static/images/Algorithm01.jpg" alt="Algo" width="600">
 
 > **Difficulty:** Intermediate 
 
