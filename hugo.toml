@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/Liyonverse/Blog-CS-Liyonverse.git/'
+baseURL = 'https://liyonverse.github.io/Blog-CS-Liyonverse/'
 locale = 'en-us'
 title = 'Liyonverse Blog'
 
