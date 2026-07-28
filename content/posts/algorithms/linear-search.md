@@ -20,7 +20,6 @@ cover : "algo.jpg"
 
 
 
-
 Linear search is one of the simplest algorithms in computer science. It works by looking at each element in a list, one by one, to find a target value.
 
 How it works:
