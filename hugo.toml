@@ -12,7 +12,7 @@ pagination.pagerSize = 5
   contentTypeName = "posts"
   showMenuItems = 2
   fullWidthTheme = true
-  centerTheme = false
+  centerTheme = true
 
 [languages]
   [languages.en]
